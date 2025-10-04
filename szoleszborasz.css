@@ -10,6 +10,18 @@ header{
     text-align: center;
 }
 
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+article{
+    width: 60%;
+    margin: auto;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -28,14 +40,24 @@ ul{
     padding: 20px;
     font-weight: 500;
 }
-ul li{
+nav ul li{
     float: left;
     padding: 10px;
 }
 
-ul li a:hover{
+nav ul li a:hover{
     background-color: rgb(235, 235, 235);
     border-radius: 10px;
+}
+
+div a{
+    background-color: rgba(61, 184, 82, 0.6);
+    border-radius: 10px;
+    color: white;
+}
+
+div a:hover{
+    background-color: rgba(61, 184, 82, 0.8);
 }
 
 #logo{
@@ -46,7 +68,6 @@ ul li a:hover{
     background-color: rgba(61, 184, 82, 0.6);
     border-radius: 10px;
     color: white;
-    font-weight: 500;
 }
 
 #kviz:hover{
