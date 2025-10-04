@@ -60,6 +60,11 @@ div a:hover{
     background-color: rgba(61, 184, 82, 0.8);
 }
 
+div img{
+    width: 40%;
+    height: 60%;
+}
+
 #logo{
     width: 10%;
 }
