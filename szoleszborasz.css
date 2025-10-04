@@ -10,6 +10,17 @@ header{
     text-align: center;
 }
 
+footer{
+    padding: 1%;
+    text-align: center;
+}
+
+footer img{
+    width: 5%;
+    display: block;
+    float: left;
+}
+
 section{
     display: flex;
     flex-direction: row;
