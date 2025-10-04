@@ -1,3 +1,16 @@
 body{
+    display: flex;
+    flex-direction: column;
     background-color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(53, 53, 53);
+
+}
+
+header{
+    text-align: center;
+}
+
+#logo{
+    width: 10%;
 }
