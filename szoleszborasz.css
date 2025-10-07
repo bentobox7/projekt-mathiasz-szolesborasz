@@ -18,7 +18,7 @@ footer{
 footer img{
     width: 5%;
     display: block;
-    float: left;
+    margin: auto;
 }
 
 section{
