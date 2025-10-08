@@ -15,3 +15,7 @@ rb.onclick = function() {
 vb.onclick = function() {
   v.style.display = "block";
 }
+
+function Bezaras(id) {
+  id.style.display = "none";
+}
