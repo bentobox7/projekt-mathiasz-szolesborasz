@@ -76,6 +76,11 @@ div img{
     height: 60%;
 }
 
+div img:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
 #logo{
     width: 10%;
 }
@@ -121,11 +126,31 @@ div img{
 
 .bezar:hover,
 .bezar:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
 }
 
 button{
+    border: 2px solid rgba(61, 184, 82, 0.6);;
+    border-radius: 10px;
+    background-color: rgba(61, 184, 82, 0.6);
+    font-size: large;
+    font-weight: 300;
+    color: white;
+}
+button:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(61, 184, 82, 0.8);
+    border: 2px solid rgba(61, 184, 82, 0.8);
+}
+
+@media only screen and (max-width: 1000px) {
+  nav, section{
+    flex-direction: column;
     
+  }
 }
