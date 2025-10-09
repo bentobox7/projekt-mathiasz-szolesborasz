@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szőlészáborász</title>
     <link rel="stylesheet" href="szoleszborasz.css">
 </head>
+
 <body>
     <header>
         <img src="kepek/logo.png" alt="logo" id="logo">
@@ -16,36 +18,43 @@
     <nav>
         <ul>
             <li><a target="_blank" href="https://mathiasz.hu">Mathiász</a></li>
-            <li><a target="_blank" href="https://mathiasz.hu/kepzeseink/technikum-szakkepzo/szolesz-borasz">Tudj meg többet a szakról</a></li>
+            <li><a target="_blank" href="https://mathiasz.hu/kepzeseink/technikum-szakkepzo/szolesz-borasz">Tudj meg
+                    többet a szakról</a></li>
             <button id="kvizb">Szőlész-borász Kvíz</button>
         </ul>
     </nav>
-    
+
     <main>
         <article>
             <h1>A borokról</h1>
-            <p>A bor szőlő erjesztésével készült alkoholos ital, amelyet már évezredek óta fogyasztanak. Három fő típusa van: vörösbor, fehérbor és a rosébor. A bor minőségét befolyásolja a szőlő fajtája, a termőterület, az időjárás, valamint az érlelés módja. A borfogyasztás kulturális és gasztronómiai jelentőséggel bír, sok helyen hagyományok és szertartások kötődnek hozzá.</p>
+            <p>A bor szőlő erjesztésével készült alkoholos ital, amelyet már évezredek óta fogyasztanak. Három fő típusa
+                van: vörösbor, fehérbor és a rosébor. A bor minőségét befolyásolja a szőlő fajtája, a termőterület, az
+                időjárás, valamint az érlelés módja. A borfogyasztás kulturális és gasztronómiai jelentőséggel bír, sok
+                helyen hagyományok és szertartások kötődnek hozzá.</p>
         </article>
 
         <section>
             <div>
                 <h1>Reduktív fehér</h1>
                 <img src="kepek/feherbor.png" alt="feher">
-                <p>Világos héjú (vagy akár kék szőlőből, héj nélkül) készül, héj nélkül erjesztve. Friss, könnyed, gyakran gyümölcsös vagy virágos aromákkal rendelkezik.</p>
+                <p>Világos héjú (vagy akár kék szőlőből, héj nélkül) készül, héj nélkül erjesztve. Friss, könnyed,
+                    gyakran gyümölcsös vagy virágos aromákkal rendelkezik.</p>
                 <button id="feherb">Bor készítése</button>
             </div>
 
             <div>
                 <h1>Rosé</h1>
                 <img src="kepek/rosebor.png" alt="rose">
-                <p>Kék szőlő rövid ideig történő héjon áztatásával készül, így világos rózsaszínes színe lesz. Ízvilága a fehér- és vörösbor között helyezkedik el, friss és gyümölcsös.</p>
+                <p>Kék szőlő rövid ideig történő héjon áztatásával készül, így világos rózsaszínes színe lesz. Ízvilága
+                    a fehér- és vörösbor között helyezkedik el, friss és gyümölcsös.</p>
                 <button id="roseb">Bor készítése</button>
             </div>
 
             <div>
                 <h1>Vörös</h1>
                 <img src="kepek/vorosbor.png" alt="voros">
-                <p>Kék szőlő héjával együtt erjesztve készül, innen nyeri sötét színét és testes, tanninos jellegét. Jellemzően gazdag, fűszeres vagy gyümölcsös ízvilágú.</p>
+                <p>Kék szőlő héjával együtt erjesztve készül, innen nyeri sötét színét és testes, tanninos jellegét.
+                    Jellemzően gazdag, fűszeres vagy gyümölcsös ízvilágú.</p>
                 <button id="vorosb">Bor készítése</button>
             </div>
 
@@ -83,6 +92,50 @@
                 <div onclick="Bezaras(k)" class="borok-oldal">
                     <span class="bezar">&times;</span>
                     <h2>Kvíz</h2>
+                    <form id="quizForm">
+                        <div class="question">
+                            <h3>1. Melyik borvidék híres a Tokaji aszúról?</h3>
+                            <label><input type="radio" name="q1" value="0"> Szekszárd</label><br>
+                            <label><input type="radio" name="q1" value="1"> Tokaj</label><br>
+                            <label><input type="radio" name="q1" value="0"> Villány</label><br>
+                            <label><input type="radio" name="q1" value="0"> Balaton-felvidék</label>
+                        </div>
+
+                        <div class="question">
+                            <h3>2. Melyik NEM fehérszőlő fajta?</h3>
+                            <label><input type="radio" name="q2" value="0"> Chardonnay</label><br>
+                            <label><input type="radio" name="q2" value="0"> Irsai Olivér</label><br>
+                            <label><input type="radio" name="q2" value="1"> Kékfrankos</label><br>
+                            <label><input type="radio" name="q2" value="0"> Szürkebarát</label>
+                        </div>
+
+                        <div class="question">
+                            <h3>3. Mit jelent a „cuvée”?</h3>
+                            <label><input type="radio" name="q3" value="0"> Egyféle szőlőből készült bor</label><br>
+                            <label><input type="radio" name="q3" value="0"> Pezsgőgyártás egyik fázisa</label><br>
+                            <label><input type="radio" name="q3" value="1"> Többféle bor házasítása</label><br>
+                            <label><input type="radio" name="q3" value="0"> Fa hordóban érlelt bor</label>
+                        </div>
+
+                        <div class="question">
+                            <h3>4. Melyik bor típikusan hosszabban érlelhető?</h3>
+                            <label><input type="radio" name="q4" value="0"> Rosé</label><br>
+                            <label><input type="radio" name="q4" value="1"> Tokaji Aszú</label><br>
+                            <label><input type="radio" name="q4" value="0"> Friss fehérbor</label><br>
+                            <label><input type="radio" name="q4" value="0"> Újbor (Beaujolais)</label>
+                        </div>
+
+                        <div class="question">
+                            <h3>5. Miért nem ajánlott túl hidegen felszolgálni a vörösbort?</h3>
+                            <label><input type="radio" name="q5" value="0"> Elveszíti színét</label><br>
+                            <label><input type="radio" name="q5" value="0"> Megromlik</label><br>
+                            <label><input type="radio" name="q5" value="1"> Nem jönnek elő az aromák</label><br>
+                            <label><input type="radio" name="q5" value="0"> Megkeseredik</label>
+                        </div>
+
+                        <button type="button" onclick="submitQuiz()">Kvíz kiértékelése</button>
+                    </form>
+                    <div id="result"></div>
                 </div>
             </div>
         </section>
@@ -98,4 +151,5 @@
 
     <script src="szoleszborasz.js"></script>
 </body>
+
 </html>
