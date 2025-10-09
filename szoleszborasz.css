@@ -26,11 +26,14 @@ section{
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 article{
     width: 60%;
     margin: auto;
+    font-size:large;
+    letter-spacing: 1px;
 }
 
 a{
