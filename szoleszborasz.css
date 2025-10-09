@@ -88,16 +88,6 @@ div img:hover{
     width: 10%;
 }
 
-#kviz{
-    background-color: rgba(61, 184, 82, 0.6);
-    border-radius: 10px;
-    color: white;
-}
-
-#kviz:hover{
-    background-color: rgba(61, 184, 82, 0.8);
-}
-
 .borok {
   display: none;
   position: fixed;
