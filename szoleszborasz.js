@@ -34,64 +34,105 @@ var bezar = document.getElementsByClassName("bezar")[0];
 var modalgombf = document.getElementById("modalgombf");
 var modalgombr = document.getElementById("modalgombr");
 var modalgombv = document.getElementById("modalgombv");
+var modalgombfv = document.getElementById("modalgombfv");
+var modalgombrv = document.getElementById("modalgombrv");
+var modalgombvv = document.getElementById("modalgombvv");
 
 fb.onclick = function () {
   f.style.display = "block";
   i = 0;
+  fk.src = `kepek/${feherkepek[i]}`;
+  fh.innerHTML = feherh2[i];
+  fp.innerHTML = feherp[i];
+  modalgombf.style.display = "block";
+  modalgombfv.style.display = "none";
 }
 rb.onclick = function () {
   r.style.display = "block";
   i = 0;
+  rk.src = `kepek/${rosekepek[i]}`;
+  rh.innerHTML = roseh2[i];
+  rp.innerHTML = rosep[i];
+  modalgombr.style.display = "block";
+  modalgombrv.style.display = "none";
 }
 vb.onclick = function () {
   v.style.display = "block";
   i = 0;
+  vk.src = `kepek/${voroskepek[i]}`;
+  vh.innerHTML = vorosh2[i];
+  vp.innerHTML = vorosp[i];
+  modalgombv.style.display = "block";
+  modalgombvv.style.display = "none";
 }
+
 kb.onclick = function () {
   k.style.display = "block";
 }
 modalgombf.onclick = function() {
+  i++;
   fk.src = `kepek/${feherkepek[i]}`;
   fh.innerHTML = feherh2[i];
   fp.innerHTML = feherp[i];
-  i++;
+  if (i == feherkepek.length - 1) {
+    modalgombf.style.display = "none";
+  }
+  modalgombfv.style.display = "block";
 }
 modalgombr.onclick = function() {
+  i++;
   rk.src = `kepek/${rosekepek[i]}`;
   rh.innerHTML = roseh2[i];
   rp.innerHTML = rosep[i];
-  i++;
+  if (i == rosekepek.length - 1) {
+    modalgombr.style.display = "none";
+  }
+  modalgombrv.style.display = "block";
 }
 modalgombv.onclick = function() {
+  i++;
   vk.src = `kepek/${voroskepek[i]}`;
   vh.innerHTML = vorosh2[i];
   vp.innerHTML = vorosp[i];
-  i++;
+  if (i == voroskepek.length - 1) {
+    modalgombv.style.display = "none";
+  }
+  modalgombvv.style.display = "block";
 }
 
+modalgombfv.onclick = function() {
+  i--;
+  fk.src = `kepek/${feherkepek[i]}`;
+  fh.innerHTML = feherh2[i];
+  fp.innerHTML = feherp[i];
+  if (i == 0) {
+    modalgombfv.style.display = "none";
+  }
+  modalgombf.style.display = "block";
+}
+modalgombrv.onclick = function() {
+  i--;
+  rk.src = `kepek/${rosekepek[i]}`;
+  rh.innerHTML = roseh2[i];
+  rp.innerHTML = rosep[i];
+  if (i == 0) {
+    modalgombrv.style.display = "none";
+  }
+  modalgombr.style.display = "block";
+}
+modalgombvv.onclick = function() {
+  i--;
+  vk.src = `kepek/${voroskepek[i]}`;
+  vh.innerHTML = vorosh2[i];
+  vp.innerHTML = vorosp[i];
+  if (i == 0) {
+    modalgombvv.style.display = "none";
+  }
+  modalgombv.style.display = "block";
+}
 
 function Bezaras(id) {
   id.style.display = "none";
-}
-
-function FeltoltF() {
-  i++;
-  let k = document.getElementById("feherkep");
-  let h = document.getElementById("feherh2");
-  let p = document.getElementById("feherp");
-}
-function FeltoltR() {
-  i++;
-  let k = document.getElementById("rosekep");
-  let h = document.getElementById("roseh2");
-  let p = document.getElementById("rosep");
-}
-function FeltoltV() {
-  i++;
-  let k = document.getElementById("voroskep");
-  let h = document.getElementById("vorosh2");
-  let p = document.getElementById("vorosp");
-
 }
 
 function submitQuiz() {

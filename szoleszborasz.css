@@ -111,7 +111,6 @@ div img:hover{
 }
 
 .borok-oldal img{
-    width: 500px;
     height: 500px;
 }
 
@@ -151,4 +150,11 @@ button:hover{
     flex-direction: column;
     
   }
+}
+
+#modalgombf, #modalgombr, #modalgombv{
+    float:right;
+}
+#modalgombfv, #modalgombrv, #modalgombvv{
+    float:left;
 }
