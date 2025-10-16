@@ -1,12 +1,12 @@
-let feherkepek = ["szuret_f.jpg","preseles.jpg","ulepites_f.jpg","erjesztes.jpg","erleles_f.jpg","feherbor.png"]
-let feherh2 = ["Szőlőszüret","Zúzás és préselés","Ülepítés","Erjesztés", "Érlelés", "Szűrés és palackozás"]
-let feherp = ["Általában zöld vagy sárga héjú szőlőt használnak.", "A szőlőt azonnal kipréselik, hogy a héjból ne oldódjon ki szín vagy fanyar anyag.", "A mustot hagyják leülepedni, hogy a zavaros részecskék eltávolíthatók legyenek.", " A tiszta mustot alacsony hőmérsékleten, rozsdamentes acéltartályokban erjesztik, így megőrzik a friss, gyümölcsös aromákat.", "Rövidebb ideig tart, gyakran tartályban, ritkábban hordóban.", "A bort letisztítják, majd palackozzák."]
-let rosekepek = ["szuret_r.jpg","preseles.jpg","logo.png","preseles2.jpg","erjesztes.jpg","rose.png"]
+let feherkepek = ["szuret_f.jpg","images.jpg","pres-szoloszuret.jpg","ulepites.jpg","bor-erjesztes.jpg","erleles.jpg",""]
+let feherh2 = ["Szőlőszüret","Zúzás","Préselés","Ülepítés","Erjesztés", "Érlelés", "Szűrés és palackozás"]
+let feherp = ["Általában zöld vagy sárga héjú szőlőt használnak.", "A szőlőt azonnal kipréselik, hogy a héjból ne oldódjon ki szín vagy fanyar anyag.", "A mustot hagyják leülepedni, hogy a zavaros részecskék eltávolíthatók legyenek.", " A tiszta mustot alacsony hőmérsékleten, rozsdamentes acéltartályokban erjesztik, így megőrzik a friss, gyümölcsös aromákat.", "Rövidebb ideig tart, gyakran tartályban, ritkábban hordóban.", "A bort leszürik, majd palackozzák."]
+let rosekepek = [""]
 let roseh2 = ["Szőlőszüret", "Zúzás", "Rövid héjon áztatás","Préselés","Erjesztés","Érlelés és palackozás"]
 let rosep = ["Kék szőlőfajtákból készül.", "A szőlőszemeket enyhén zúzzák.", "A héjjal együtt hagyják állni 6–24 óráig (szemben a vörösbor hosszabb héjon erjesztésével), hogy csak enyhe szín és kevés tannin oldódjon ki.", "Az áztatás után a levet elválasztják a héjtól.","Hasonló módon történik, mint a fehérboroknál, alacsony hőmérsékleten.", "Gyorsabban piacra kerül, friss, üde stílusban."]
-let voroskepek = ["szuret_r.jpg","zuzas.jpg","erjesztes.jpg","csomosz.jpg","preseles.jpg","erleles_f.jpg","vorosbor.png"]
+let voroskepek = [""]
 let vorosh2 = ["Szőlőszüret", "Zúzás és bogyózás", "Erjesztés héjjal együtt", "Csömöszölés", "Préselés", "Érlelés", "Szűrés és palackozás"]
-let vorosp = ["Érett, kék szőlőt szüretelnek.", "A szőlőszemeket összezúzzák, leválasztják a szárakat.", "A cefrét (zúzott szőlő héjjal, maggal) tartályba töltik, és természetes vagy hozzáadott élesztővel erjesztik. A héj jelenléte biztosítja a bor sötét színét és a tanninokat, amelyek a bor szerkezetéért és érlelhetőségéért felelősek.", "Az erjedés alatt a héjat folyamatosan visszanyomják a lébe, hogy jobb szín- és ízanyag-kioldódást érjenek el.", "Az erjedés után a bort lefejtik, a visszamaradt héjat és magot kipréselik.", "A bort fahordóban vagy rozsdamentes tartályban érlelik több hónapig, akár évekig is.", " A bort letisztítják, majd palackozzák."]
+let vorosp = ["Érett, kék szőlőt szüretelnek.", "A szőlőszemeket összezúzzák, leválasztják a szárakat.", "A cefrét (zúzott szőlő héjjal, maggal) tartályba töltik, és természetes vagy hozzáadott élesztővel erjesztik. A héj jelenléte biztosítja a bor sötét színét és a tanninokat, amelyek a bor szerkezetéért és érlelhetőségéért felelősek.", "Az erjedés alatt a héjat folyamatosan visszanyomják a lébe, hogy jobb szín- és ízanyag-kioldódást érjenek el.", "Az erjedés után a bort lefejtik, a visszamaradt héjat és magot kipréselik.", "A bort fahordóban vagy rozsdamentes tartályban érlelik több hónapig, akár évekig is.", " A bort leszürik, majd palackozzák."]
 
 let kerdesek = ["Melyik színű bor készül kék szőlőből?", "Melyik színű bor készül a héjon áztatás után kipréselt mustból?", "Melyik színű bor erjed a héjon és magon?", "Melyik bort érlelik a leghosszabb ideig?"]
 let valaszok = []
@@ -39,6 +39,13 @@ var modalgombv = document.getElementById("modalgombv");
 var modalgombfv = document.getElementById("modalgombfv");
 var modalgombrv = document.getElementById("modalgombrv");
 var modalgombvv = document.getElementById("modalgombvv");
+var mb = document.getElementById("mathiaszb");
+var m = document.getElementById("mathiasz");
+
+mb.onclick = function() {
+  var m = document.getElementById("mathiasz");
+  m.style.display = "block";
+}
 
 fb.onclick = function () {
   f.style.display = "block";
