@@ -8,8 +8,10 @@ let voroskepek = ["szuret_r.jpg","zuzas.jpg","erjesztes.jpg","csomosz.jpg","pres
 let vorosh2 = ["Szőlőszüret", "Zúzás és bogyózás", "Erjesztés héjjal együtt", "Csömöszölés", "Préselés", "Érlelés", "Szűrés és palackozás"]
 let vorosp = ["Érett, kék szőlőt szüretelnek.", "A szőlőszemeket összezúzzák, leválasztják a szárakat.", "A cefrét (zúzott szőlő héjjal, maggal) tartályba töltik, és természetes vagy hozzáadott élesztővel erjesztik. A héj jelenléte biztosítja a bor sötét színét és a tanninokat, amelyek a bor szerkezetéért és érlelhetőségéért felelősek.", "Az erjedés alatt a héjat folyamatosan visszanyomják a lébe, hogy jobb szín- és ízanyag-kioldódást érjenek el.", "Az erjedés után a bort lefejtik, a visszamaradt héjat és magot kipréselik.", "A bort fahordóban vagy rozsdamentes tartályban érlelik több hónapig, akár évekig is.", " A bort letisztítják, majd palackozzák."]
 
-let kerdesek = ["Melyik borvidék híres a Tokaji aszúról?","Melyik NEM fehérszőlő fajta?","Mit jelent a „cuvée”?","Melyik bor típikusan hosszabban érlelhető?","Miért nem ajánlott túl hidegen felszolgálni a vörösbort?"]
+let kerdesek = ["Melyik színű bor készül kék szőlőből?", "Melyik színű bor készül a héjon áztatás után kipréselt mustból?", "Melyik színű bor erjed a héjon és magon?", "Melyik bort érlelik a leghosszabb ideig?"]
 let valaszok = []
+
+
 
 let i = 0;
 
